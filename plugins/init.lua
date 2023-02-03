@@ -18,4 +18,7 @@ return {
       require "custom.plugins.null-ls"
     end,
   },
+  
+  -- coding time record
+  ["wakatime/vim-wakatime"] = {},
 }
