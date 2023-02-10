@@ -22,6 +22,9 @@ local sources = {
 
   -- cpp
   b.formatting.clang_format.with { extra_args = { "--style", "{BasedOnStyle: Google, IndentWidth: 4, PointerAlignment: Left, ReferenceAlignment: Pointer, DerivePointerAlignment: false}" } },
+
+  -- python
+  b.formatting.black,
 }
 
 null_ls.setup {

@@ -1,3 +1,5 @@
+local overrides = require "custom.plugins.overrides"
+
 return {
 
   ----------------------------------------- default plugins ------------------------------------------
@@ -8,6 +10,9 @@ return {
       require "custom.plugins.lspconfig"
     end,
   },
+
+  -- override default configs
+  ["williamboman/mason.nvim"] = { override_options = overrides.mason },
 
   --------------------------------------------- custom plugins ----------------------------------------------
 
